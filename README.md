@@ -17,7 +17,7 @@ python3 -m venv .venv
 
 # Activate the virtual environment
 .venv\Scripts\activate # Windows
-.venv/bin/activate # Linux
+source .venv/bin/activate # Linux
 
 # Install the project dependencies
 pip install -r requirements.txt

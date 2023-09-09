@@ -1,6 +1,5 @@
 import datetime
 import os
-
 from dotenv import load_dotenv
 import discord
 
