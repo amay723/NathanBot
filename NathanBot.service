@@ -1,0 +1,15 @@
+[Unit]
+Description=Nathan Voice Activity Monitor
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/NathanBot/.venv/bin/python3 /home/pi/NathanBot/bot.py
+WorkingDirectory=/home/pi/NathanBot
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
