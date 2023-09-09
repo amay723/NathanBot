@@ -18,7 +18,7 @@ class BotClient(discord.Client):
         print('Logged on as', self.user)
 
     async def on_voice_state_update(self, member, before, after):
-        if member.id is not USER_ID: return
+        if member.id != USER_ID: return
 
         message = None
         time_formatted = get_formatted_time()
